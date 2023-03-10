@@ -4,11 +4,45 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #c4c4c4;
+}
+
 .container{
     height: 100vh;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container .display-content{
-    
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+.container .display-content .content{
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    color: #ffffff;
+}
+.container .display-input{
+
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .display-input textarea{
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
