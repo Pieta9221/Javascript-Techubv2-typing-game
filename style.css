@@ -22,6 +22,11 @@ body{
     justify-content: center;
     border: 1px solid #ffffff;
     border-radius: 8px;
+    transition: all 1s ease;
+}
+
+.container .display-content .content.animate{
+    animation: blink .5s infinite;
 }
 
 .container .display-content .content{
@@ -45,4 +50,28 @@ body{
     outline: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+
+.correct{
+    color: green;
+    /* background-color: rgb(210, 240, 210); */
+}
+
+.incorrect{
+    color: red;
+    /* text-decoration: underline; */
+}
+
+.timer{
+    background: purple;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    position: absolute;
+    color: white;
+    top: 240px;
 }
